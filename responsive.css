@@ -1,6 +1,122 @@
 /* SmartPhones */
-@media screen and (max-width:576px) {
-    
+@media screen and (max-width:375px) {
+    body{
+        max-width: 375px;
+        margin: 0 auto;
+    }
+    header{
+        width: 98%;
+        margin: 1rem auto;
+    }
+    header nav{
+        width: 94%;
+        margin: 0 auto;
+    }
+
+    header nav .logo h1{
+        font-size: 1.3rem;
+    }
+    header nav .nav_bar{
+        display: inline;
+        width: 1.5rem;
+    }
+    header nav ul{
+        display: none;
+    }
+    #banner_area{
+        width: 98%;
+    }
+    #banner_area .banner_content h1{
+        font-size: 1.3rem;
+        padding-top: 2rem;
+
+    }
+    #banner_area .banner_content p{
+        font-size: 0.8rem;
+    }
+    #banner_area .banner_content .banner_form{
+        width: 95%;
+        margin: 2rem auto;
+        display: block;
+    }
+    #banner_area .banner_content .banner_form input,select,button{
+        width: 90%;
+
+        margin: 1rem auto;
+    }
+    /* Popular Area */
+    #popular_area{
+        flex-direction: column;
+    }
+    #popular_area .popular_text{
+        width: 100%;
+    }
+    #popular_area .popular_text h1{
+        font-size: 1.7rem;
+    }
+    #popular_area>img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #popular_area .popular_text .btn_1{
+        width: 50%;
+    }
+    /* Destination Area Starts Here */
+    #destination_area .destination_content{
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    #destination_area .destination_content .destinations{
+        width: 100%;
+    }
+
+
+}   
+@media screen and (min-width:375px) and (max-width:576px) {
+    body{
+        max-width: 576px;
+        margin: 0 auto;
+    }
+    header{
+        width: 98%;
+        margin: 0 auto;
+    }
+    header nav{
+        width: 94%;
+        margin: 0 auto;
+    }    
+    header nav .logo h1{
+        font-size: 1.3rem;
+    }
+    header nav .nav_bar{
+        display: inline;
+        width: 1.5rem;
+    }
+    header nav ul{
+        display: none;
+    }
+    #banner_area{
+        width: 98%;
+    }
+    #banner_area .banner_content h1{
+        font-size: 1.3rem;
+        padding-top: 2rem;
+
+    }
+    #banner_area .banner_content p{
+        font-size: 0.8rem;
+    }
+    #banner_area .banner_content .banner_form{
+        width: 95%;
+        margin: 2rem auto;
+        display: block;
+    }
+    #banner_area .banner_content .banner_form input,select,button{
+        width: 90%;
+
+        margin: 1rem auto;
+    }   
 }
 /* Medium Device */
 @media screen and (min-width:576px) and (max-width:768px) {
@@ -11,7 +127,9 @@
     
 }
 
-
+@media screen and (min-width:992px) and (max-width:1200px) {
+    
+}
 
 
 
