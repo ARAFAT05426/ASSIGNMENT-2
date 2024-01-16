@@ -26,6 +26,7 @@
     background: var(--prime-color);
     border-radius: 5px;
     font-weight: var(--font-weight);
+    cursor: pointer;
 }
 
 body{
@@ -294,15 +295,324 @@ main{
     bottom: 45%;
     left: 37%;
 }
+/* Choose Area Strats Here */
+#Choose_area{
+    width: 100%;
+    margin: 4rem;
+}
+#Choose_area .choose_text{
+    text-align: center;
+}
+
+#Choose_area .choose_text h1{
+    font-size: var(--section-heading);
+    font-weight: var(--font-weight);
+    margin-bottom: 1.5rem;
+}
+
+#Choose_area .choose_text p{
+    font-size: 1rem;
+    font-weight: var(--font-weight-2);
+}
+
+#Choose_area .choose_content{
+    width: 95%;
+    margin: 3rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#Choose_area .choose_content .choose_options{
+    width: 48%;
+    height: 280px;
+    padding: 2rem 2rem;
+    border-radius: 10px;
+}
+
+#Choose_area .choose_content .choose_options h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
 
 
+#Choose_area .choose_content .choose_options img{
+    width: 64px;
+    margin-bottom: 1rem;
+}
+
+#Choose_area .choose_content .option_1{
+    background: #FFFBF7;
+}
+
+#Choose_area .choose_content .option_2{
+    background: #F4FDFF;
+}
+
+#Choose_area .choose_content .option_3{
+    background: #FEF6F6;
+}
+
+/* Deals Area Starts Here */
+#dels_area{
+    width: 100%;
+}
+
+#dels_area .deals_text{
+    text-align: center;
+}
+
+#dels_area .deals{
+    display: flex;
+    margin: 1.5rem 0;
+    height: 500px;
+    border-radius: 15px;
+}
+
+#dels_area .deals_1{
+    width: 100%;
+    background: url('./resources/Group\ 39.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+
+#dels_area .deals_2{
+    width: 100%;
+    background: url('./resources/Group\ 40.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#dels_area .deals_3{
+    width: 100%;
+    background: url('./resources/Group\ 39.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: flex-end;
+}
+
+#dels_area .deals .deals_content{
+    width: 42%;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(2.5px);
+    margin: 2rem 2rem 2rem 0;
+    padding: 2rem 3rem;
+}
+
+#dels_area .deals_2>.left_margin{
+    margin: 2rem 0 2rem 2rem;
+}
 
 
+#dels_area .deals .deals_content h2{
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+#dels_area .deals .deals_content p{
+    font-size: 1rem;
+    font-weight: var(--font-weight-2);
+    line-height: normal;
+    margin-bottom: 1rem;
+}
+
+#dels_area .deals .deals_content h5{
+    color: #FF5400;
+    font-size: 1.1rem;
+    font-weight: var(--font-weight);
+    margin-bottom: 1.3rem;
+}
+
+#dels_area .deals .deals_content .deals_icon h4 img{
+    width: 28px;
+}
+
+#dels_area .deals .deals_content .deals_icon{
+    display: flex;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+#dels_area .deals .deals_content .deals_icon h4{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#dels_area>.btn{
+    display: block;
+    width: 200px;
+    margin: 1rem auto;
+}
+
+/* Simple Area Starts Here */
+#simple_area{
+    margin-top: 3rem;
+    width: 100%;
+    display: flex;
+}
+
+#simple_area .simple_text{
+    width: 50%;
+    padding: 2rem 0;
+}
+
+#simple_area .simple_text h1{
+    font-size: var(--section-heading);
+    font-weight: 900;
+    line-height: 55px;
+    margin-bottom: 1rem;
+}
+
+#simple_area .simple_text p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+}
+#simple_area .simple_text ul li{
+    list-style-type: disc;
+    font-weight: var(--font-weight);
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+#simple_area video{
+    width: 50%;
+    border-radius: 10px;
+}
+/* NewsLetter Area Starts Here */
+#newsletter_area{
+    margin: 5rem 0;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    position: relative;
+}
+
+#newsletter_area .newsletter_form{
+    width: 40%;
+    border-radius: 15px;
+    border: 1px solid #FF5400;
+    padding: 3rem 2rem;
+}
+
+#newsletter_area .newsletter_form h1{
+    font-size: var(--section-heading);
+    font-weight: var(--font-weight);
+    margin-bottom: 1rem;
+}
+
+#newsletter_area .newsletter_form p{
+    font-size: 1rem;
+    color: #5A5A5D;
+    margin-bottom: 2rem;
+}
+
+#newsletter_area .newsletter_form hr{
+    width: 100%;
+}
+
+#newsletter_area .newsletter_form input,
+#newsletter_area .newsletter_form> button{
+    width: 80%;
+    padding: 1rem 2rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+}
+
+#newsletter_area .newsletter_form input{
+    background: #F3F3F3;
+}
+
+#newsletter_area .newsletter_img{
+    width: 60%;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+}
+
+#newsletter_area .newsletter_img img{
+    width: 100%;
+    object-fit: cover;
+}
 
 
+#newsletter_area .newsletter_img .discount{
+    padding: 1.5rem 2rem;
+    width: 60%;
+    background: #FF5400;
+    border-radius: 15px;
+    position: absolute;
+    bottom: 115px;
+    right: 0;
+    transform: rotate(-25deg);
+}
+
+#newsletter_area .newsletter_img .discount p{
+    font-size: 1.5rem;
+}
+
+#newsletter_area .newsletter_img .discount span{
+    font-size: 3rem;
+    font-weight: 900;
+}
 
 
+/* Footer Area Stars Here */
+footer{
+    width: 100%;
+    background: #F3F3F3;
+    margin-top: 3rem;
+    text-align: center;
+    padding: 5rem 0;
+}
+footer .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+    margin: 2rem;
+}
 
+footer .footer h3{
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+footer p{
+    color: #5A5A5D;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+footer .footer_icons{
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+footer .footer_icons img{
+    width: 2rem;
+}
+
+hr{
+    width: 80%;
+    background: #DDDDDD;
+    margin: 3rem auto 2rem auto;
+    height: 2px;
+}
 
 
 
