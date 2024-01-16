@@ -71,6 +71,7 @@
     }
     #destination_area .destination_content .destinations{
         width: 100%;
+        font-size: 1.5rem;
     }
     #destination_area .destination_content .destinations img{
         width: 100%;
@@ -92,10 +93,35 @@
     }#destination_area .destination_content .box_7{
         grid-column: 1/span 12;
     }
+    #destination_area .destination_content .box_1::after{
+        left: 35%;
+        bottom: 40%;
+    }
+    #destination_area .destination_content .box_2::after{
+        bottom: 40%;
+        right: 35%;
+    }
+    #destination_area .destination_content .box_3::after{
+        bottom: 40%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_4::after{
+        bottom: 45%;
+        left: 30%;
+    }
+    #destination_area .destination_content .box_5::after{
+        bottom: 45%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_7::after{
+        bottom: 45%;
+        left: 30%;
+    }
     /* Choose Area Starts Here */
     #Choose_area{
         width: 95%;
         margin: 0 auto;
+        margin-top: 2rem;
     }
     #Choose_area .choose_content{
         width: 100%;
@@ -113,6 +139,10 @@
         font-size: 12px;
     }
     /* Deals Area Starts Here */
+    #dels_area{
+        width: 95%;
+        margin: 0 auto;
+    }
     #dels_area .deals{
         align-items: flex-end;
         justify-content: center;
@@ -152,6 +182,8 @@
     /* Simple Area Starts Here */
     #simple_area{
         flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
     }
     #simple_area .simple_text{
         width: 100%;
@@ -159,11 +191,31 @@
     #simple_area video{
         width: 100%;
     }
+    /* Extra Area Starts Here */
+    #extra_area{
+        flex-direction: column-reverse;
+    }
+    #extra_area img{
+        width: 97%;
+        margin: 0 auto;
+    }
+    #extra_area .extra_text{
+        width: 95%;
+        margin: 1rem auto;
+    }
+
     /* NewsLetter Area Starts Here */
     #newsletter_area{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
         flex-direction: column;
     }
     #newsletter_area .newsletter_form{
+        width: 100%;
+    }
+    #newsletter_area .newsletter_form input,
+    #newsletter_area .newsletter_form> button{
         width: 100%;
     }
     #newsletter_area .newsletter_img{
@@ -187,11 +239,6 @@
     #newsletter_area .newsletter_img .discount span{
         font-size: 1.1rem;
     }
-
-
-
-
-
 }   
 @media screen and (min-width:375px) and (max-width:576px) {
     body{
@@ -229,7 +276,7 @@
     }
     #banner_area .banner_content .banner_form{
         width: 95%;
-        margin: 4rem auto 0 auto;
+        margin: 3rem auto 0 auto;
         padding: 1rem 1.5rem;
         display: block;
     }
@@ -256,12 +303,17 @@
         width: 50%;
     }
     /* Destination Area Starts Here */
+    #destination_area{
+        width: 95%;
+        margin: 0 auto;
+    }
+
     #destination_area .destination_content .destinations{
         width: 100%;
     }
     #destination_area .destination_content .destinations img{
         width: 100%;
-        height: 175px;
+        height: 225px;
     }
     #destination_area .destination_content .box_1{
         grid-column: 1/span 12;
@@ -279,10 +331,38 @@
     }#destination_area .destination_content .box_7{
         grid-column: 1/span 12;
     }
+    #destination_area .destination_content .destinations{
+        font-size: 1.6rem;
+    }
+    #destination_area .destination_content .box_1::after{
+        left: 35%;
+        bottom: 40%;
+    }
+    #destination_area .destination_content .box_2::after{
+        bottom: 40%;
+        right: 38%;
+    }
+    #destination_area .destination_content .box_3::after{
+        bottom: 40%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_4::after{
+        bottom: 45%;
+        left: 28%;
+    }
+    #destination_area .destination_content .box_5::after{
+        bottom: 45%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_7::after{
+        bottom: 45%;
+        left: 33%;
+    }
     /* Choose Area Starts Here */
     #Choose_area{
-        width: 98%;
+        width: 95%;
         margin: 0 auto;
+        margin-top: 2rem;
     }
     #Choose_area .choose_content{
         width: 100%;
@@ -300,6 +380,16 @@
         font-size: 12px;
     }
     /* Deals Area Starts Here */
+    #dels_area{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #dels_area .deals_text h1{
+        font-size: 2rem;
+    }
+    #dels_area .deals_text p{
+        font-size: 13px;
+    }
     #dels_area .deals{
         align-items: flex-end;
         justify-content: center;
@@ -311,6 +401,9 @@
         padding: 1rem 1rem;
         margin: 0 auto 1rem auto;
     }
+    #dels_area .deals .deals_content h2{
+        font-size: 1.7rem;
+    }
     #dels_area .deals .deals_content .deals_icon{
         gap: 1rem;
         flex-wrap: wrap;
@@ -320,20 +413,23 @@
     #dels_area .deals .deals_content .deals_icon h4{
         font-size: 1rem;
     }
-
+    #dels_area .deals .deals_content h5{
+        font-size: 1.1rem;
+    }
     #dels_area .deals .deals_content .deals_icon h4 img{
-        width: 18px;
+        width: 24px;
     }
     #dels_area .deals .deals_content p{
-        font-size: 10px;
+        font-size: 1rem;
     }
     #dels_area .deals .deals_content h5{
-        margin-bottom: 5px;
+        margin-bottom: 8px;
     }
 
     #dels_area .deals .deals_content .btn{
-        padding: 10px;
-        width: 120px;
+        padding: 10px 1rem;
+        min-width: 120px;
+        max-width: 200px;
         font-size: 1rem;
     }
     /* Simple Area Starts Here */
@@ -348,20 +444,638 @@
     #simple_area video{
         width: 100%;
     }
+    /* Extra Area Starts Here */
+    #extra_area{
+        flex-direction: column-reverse;
+    }
+    #extra_area img{
+        width: 97%;
+        margin: 0 auto;
+    }
+    #extra_area .extra_text{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    /* NewsLetter Area Starts Here */
+    #newsletter_area{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    #newsletter_area .newsletter_form{
+        width: 100%;
+    }
+    #newsletter_area .newsletter_form input,
+    #newsletter_area .newsletter_form> button{
+        width: 100%;
+    }
+    #newsletter_area .newsletter_img{
+        width: 100%;
+        height: 300px;
+    }
+    #newsletter_area .newsletter_img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    #newsletter_area .newsletter_img .discount{
+        width: 60%;
+        padding: 1rem 1.5rem;
+        bottom: 55px;
+    }
+    #newsletter_area .newsletter_img .discount p{
+        font-size: 0.8rem;
+    }
+    #newsletter_area .newsletter_img .discount span{
+        font-size: 1.1rem;
+    }
 }
 /* Medium Device */
 @media screen and (min-width:576px) and (max-width:768px) {
+        body{
+            max-width: 768px;
+            margin: 0 auto;
+        }
+        header nav{
+            width: 94%;
+            margin: 0 auto;
+        }    
+        header nav .logo h1{
+            font-size: 1.7rem;
+        }
+        header nav .nav_bar{
+            display: inline;
+            width: 1.5rem;
+        }
+        header nav ul{
+            display: none;
+        }
+        #banner_area{
+            width: 97%;
+        }
+        #banner_area .banner_content h1{
+            font-size: 2rem;
+            padding-top: 3rem;
     
+        }
+        #banner_area .banner_content p{
+            font-size: 1rem;
+        }
+        #banner_area .banner_content .banner_form{
+            width: 95%;
+            margin: 4rem auto 0 auto;
+            padding: 1rem 1.5rem;
+            display: block;
+        }
+        #banner_area .banner_content .banner_form input,select,button{
+            width: 90%;
+            margin: 1rem auto;
+            font-size: 1rem;
+        }   
+        /* Popular Area Starts Here */
+        #popular_area{
+            flex-direction: column;
+        }
+        #popular_area .popular_text{
+            width: 100%;
+        }
+        #popular_area .popular_text h1{
+            font-size: 1.7rem;
+        }
+        #popular_area>img{
+            width: 95%;
+            margin: 0 auto;
+        }
+        #popular_area .popular_text .btn_1{
+            width: 50%;
+        }
+        /* Destination Area Starts Here */
+        #destination_area{
+            width: 95%;
+            margin: 0 auto;
+        }
+    
+        #destination_area .destination_content .destinations{
+            width: 100%;
+        }
+        #destination_area .destination_content .destinations img{
+            width: 100%;
+            height: 285px;
+        }
+        #destination_area .destination_content .box_1{
+            grid-column: 1/span 12;
+        }
+        #destination_area .destination_content .box_2{
+            grid-column: 1/span 12;
+        }#destination_area .destination_content .box_3{
+            grid-column: 1/span 12;
+        }#destination_area .destination_content .box_4{
+            grid-column: 1/span 12;
+        }#destination_area .destination_content .box_5{
+            grid-column: 1/span 12;
+        }#destination_area .destination_content .box_6{
+            grid-column: 1/span 12;
+        }#destination_area .destination_content .box_7{
+            grid-column: 1/span 12;
+        }
+        #destination_area .destination_content .destinations{
+            font-size: 2rem;
+        }
+        #destination_area .destination_content .box_1::after{
+            left: 35%;
+            bottom: 45%;
+        }
+        #destination_area .destination_content .box_2::after{
+            bottom: 45%;
+            right: 40%;
+        }
+        #destination_area .destination_content .box_3::after{
+            bottom: 43%;
+            left: 38%;
+        }
+        #destination_area .destination_content .box_4::after{
+            bottom: 45%;
+            left: 30%;
+        }
+        #destination_area .destination_content .box_5::after{
+            bottom: 45%;
+            left: 38%;
+        }
+        #destination_area .destination_content .box_6::after{
+            bottom: 45%;
+            left: 35%;
+        }
+        #destination_area .destination_content .box_7::after{
+            bottom: 45%;
+            left: 35%;
+        }
+        /* Choose Area Starts Here */
+        #Choose_area{
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
+        #Choose_area .choose_content{
+            width: 100%;
+        }
+        #Choose_area .choose_content .choose_options{
+            width: 95%;
+        }
+        #Choose_area .choose_content .choose_options img{
+            width: 48px;
+        }
+        #Choose_area .choose_content .choose_options h2{
+            font-size: 1.5rem;
+        }
+        #Choose_area .choose_content .choose_options p{
+            font-size: 12px;
+        }
+        /* Deals Area Starts Here */
+        #dels_area{
+            width: 95%;
+            margin: 0 auto;
+        }
+        #dels_area .deals{
+            align-items: flex-end;
+            justify-content: center;
+        }
+    
+        #dels_area .deals .deals_content{
+            width: 90%;
+            height: 75%;
+            padding: 1rem 1rem;
+            margin: 0 auto 1rem auto;
+        }
+        #dels_area .deals .deals_content .deals_icon{
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin: 0 0 10px 0;
+        }
+    
+        #dels_area .deals .deals_content .deals_icon h4{
+            font-size: 1rem;
+        }
+    
+        #dels_area .deals .deals_content .deals_icon h4 img{
+            width: 24px;
+        }
+        #dels_area .deals .deals_content h2{
+            font-size: 2rem;
+        }
+        #dels_area .deals .deals_content p{
+            font-size: 1.1rem;
+        }
+        #dels_area .deals .deals_content h5{
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+    
+        #dels_area .deals .deals_content .btn{
+            padding: 10px;
+            width: 250px;
+            font-size: 1.3rem;
+        }
+        /* Simple Area Starts Here */
+        #simple_area{
+            flex-direction: column;
+            width: 95%;
+            margin: 0 auto;
+        }
+        #simple_area .simple_text{
+            width: 100%;
+        }
+        #simple_area video{
+            width: 100%;
+        }
+        /* Extra Area Starts Here */
+        #extra_area{
+            flex-direction: column-reverse;
+        }
+        #extra_area img{
+            width: 97%;
+            margin: 0 auto;
+        }
+        #extra_area .extra_text{
+            width: 95%;
+            margin: 1rem auto;
+        }
+        #extra_area .extra_text h1{
+            font-size: 3rem;
+        }   
+        /* NewsLetter Area Starts Here */
+        #newsletter_area{
+            width: 95%;
+            margin: 0 auto;
+            margin-top: 2rem;
+            flex-direction: column;
+        }
+        #newsletter_area .newsletter_form{
+            width: 100%;
+        }
+        #newsletter_area .newsletter_form input,
+        #newsletter_area .newsletter_form> button{
+            width: 100%;
+        }
+        #newsletter_area .newsletter_img{
+            width: 100%;
+            height: 300px;
+        }
+        #newsletter_area .newsletter_img img{
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+    
+        #newsletter_area .newsletter_img .discount{
+            width: 55%;
+            padding: 1rem 1.5rem;
+            bottom: 78px;
+        }
+        #newsletter_area .newsletter_img .discount p{
+            font-size: 1rem;
+        }
+        #newsletter_area .newsletter_img .discount span{
+            font-size: 1.7rem;
+        }
 }
 /* Large Tablets */
 @media screen and (min-width:768px) and (max-width:992px) {
-    
-}
+    body{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    header{
+        width: 97%;
+        margin: 1.5rem auto;
+    }
+    header nav{
+        width: 95%;
+        margin: 0 auto;
+    }
+    header nav .logo h1{
+        font-size: 1.9rem;
+    }
+    #banner_area{
+        width: 98%;
+    }
+    #banner_area .banner_content h1{
+        font-size: 2.5rem;
+        padding-top: 3rem;
 
-@media screen and (min-width:992px) and (max-width:1200px) {
-    
-}
+    }
+    #banner_area .banner_content p{
+        font-size: 1rem;
+    }
+    #banner_area .banner_content .banner_form{
+        width: 95%;
+        margin: 2.5rem auto 0 auto;
+        padding: 1rem 1.5rem;
+        display: block;
+    }
+    #banner_area .banner_content .banner_form input,select,button{
+        width: 90%;
+        margin: 1rem auto;
+        font-size: 1rem;
+    }   
+    /* Popular Area Starts Here */
+    #popular_area{
+        flex-direction: column;
+    }
+    #popular_area .popular_text{
+        width: 100%;
+    }
+    #popular_area .popular_text h1{
+        font-size: 2.7rem;
+    }
+    #popular_area>img{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #popular_area .popular_text .btn_1{
+        width: 50%;
+    }
+    /* Destination Area Starts Here */
+    #destination_area{
+        width: 95%;
+        margin: 0 auto;
+    }
 
+    #destination_area .destination_content .destinations{
+        width: 100%;
+    }
+    #destination_area .destination_content .destinations img{
+        width: 100%;
+        height: 325px;
+    }
+    #destination_area .destination_content .box_1{
+        grid-column: 1/span 12;
+    }
+    #destination_area .destination_content .box_2{
+        grid-column: 1/span 12;
+    }#destination_area .destination_content .box_3{
+        grid-column: 1/span 12;
+    }#destination_area .destination_content .box_4{
+        grid-column: 1/span 12;
+    }#destination_area .destination_content .box_5{
+        grid-column: 1/span 12;
+    }#destination_area .destination_content .box_6{
+        grid-column: 1/span 12;
+    }#destination_area .destination_content .box_7{
+        grid-column: 1/span 12;
+    }
+    #destination_area .destination_content .destinations{
+        font-size: 2.3rem;
+    }
+    #destination_area .destination_content .box_1::after{
+        left: 35%;
+        bottom: 40%;
+    }
+    #destination_area .destination_content .box_2::after{
+        bottom: 40%;
+        right: 42%;
+    }
+    #destination_area .destination_content .box_3::after{
+        bottom: 45%;
+        left: 40%;
+    }
+    #destination_area .destination_content .box_4::after{
+        bottom: 45%;
+        left: 30%;
+    }
+    #destination_area .destination_content .box_5::after{
+        bottom: 45%;
+        left: 40%;
+    }
+    #destination_area .destination_content .box_6::after{
+        bottom: 45%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_7::after{
+        bottom: 45%;
+        left: 33%;
+    }
+    /* Choose Area Starts Here */
+    #Choose_area{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    #Choose_area .choose_content{
+        width: 100%;
+    }
+    #Choose_area .choose_content .choose_options{
+        width: 95%;
+    }
+    #Choose_area .choose_content .choose_options img{
+        width: 48px;
+    }
+    #Choose_area .choose_content .choose_options h2{
+        font-size: 1.5rem;
+    }
+    #Choose_area .choose_content .choose_options p{
+        font-size: 12px;
+    }
+    /* Deals Area Starts Here */
+    #dels_area{
+        width: 95%;
+        margin: 0 auto;
+    }
+    #dels_area .deals_text h1{
+        font-size: 2rem;
+    }
+    #dels_area .deals_text p{
+        font-size: 13px;
+    }
+    #dels_area .deals{
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #dels_area .deals .deals_content{
+        width: 90%;
+        height: 75%;
+        padding: 1rem 1rem;
+        margin: 0 auto 1rem auto;
+    }
+    #dels_area .deals .deals_content h2{
+        font-size: 2rem;
+    }
+    #dels_area .deals .deals_content .deals_icon{
+        gap: 1rem;
+        flex-wrap: wrap;
+        margin: 0 0 10px 0;
+    }
+
+    #dels_area .deals .deals_content .deals_icon h4{
+        font-size: 1rem;
+    }
+    #dels_area .deals .deals_content h5{
+        font-size: 1.1rem;
+    }
+    #dels_area .deals .deals_content .deals_icon h4 img{
+        width: 28px;
+    }
+    #dels_area .deals .deals_content p{
+        font-size: 1.3rem;
+    }
+    #dels_area .deals .deals_content h5{
+        margin-bottom: 8px;
+        font-size: 2rem;
+    }
+
+    #dels_area .deals .deals_content .btn{
+        padding: 1.5 2rem;
+        font-size: 1rem;
+        width: 40%;
+    }
+    /* Simple Area Starts Here */
+    #simple_area{
+        flex-direction: column;
+        width: 95%;
+        margin: 0 auto;
+    }
+    #simple_area .simple_text{
+        width: 100%;
+    }
+    #simple_area video{
+        width: 100%;
+    }
+    /* Extra Area Starts Here */
+    #extra_area{
+        flex-direction: column-reverse;
+    }
+    #extra_area img{
+        width: 97%;
+        margin: 0 auto;
+    }
+    #extra_area .extra_text{
+        width: 95%;
+        margin: 1rem auto;
+    }
+    #extra_area .extra_text h1{
+        font-size: 3rem;
+    }
+    /* NewsLetter Area Starts Here */
+    #newsletter_area{
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 2rem;
+        flex-direction: column;
+    }
+    #newsletter_area .newsletter_form{
+        width: 100%;
+    }
+    #newsletter_area .newsletter_form input,
+    #newsletter_area .newsletter_form> button{
+        width: 100%;
+    }
+    #newsletter_area .newsletter_img{
+        width: 100%;
+        height: 400px;
+    }
+    #newsletter_area .newsletter_img img{
+        width: 100%;
+        height: 100%;
+        border-radius: 15px;
+    }
+    #newsletter_area .newsletter_img .discount{
+        width: 50%;
+        padding: 1rem 1.5rem;
+        bottom: 100px;
+    }
+    #newsletter_area .newsletter_img .discount p{
+        font-size: 1.3rem;
+    }
+    #newsletter_area .newsletter_img .discount span{
+        font-size: 2rem;
+    }
+}
+/*  Dekstop */
+
+@media screen and (min-width:992px) and (max-width:1320px) {
+    body{
+        max-width: 992px;
+        margin: 0 auto;
+    }
+    header{
+        width: 98%;
+        margin: 0 auto;
+        margin-top: 2rem;
+    }
+    main{
+        width: 98%;
+        margin: 0 auto;
+    }
+    #popular_area .popular_text h1{
+        font-size: 3.5rem;
+    }
+    #popular_area .popular_text p{
+        font-size: 1rem;
+    }
+    #popular_area .popular_text ul li{
+        font-size: 1rem;
+    }
+    #destination_area .destination_content .destinations{
+        font-size: 2rem;
+    }
+    #popular_area>img{
+        width: 48%;
+    }
+    #destination_area .destination_content .box_2::after{
+        bottom: 45%;
+        left: 35%;
+    }
+    #destination_area .destination_content .box_3::after{
+        bottom: 45%;
+        left: 30%;
+    }
+    #destination_area .destination_content .box_4::after{
+        bottom: 45%;
+        left: 30%;
+    }
+    #destination_area .destination_content .box_5::after{
+        bottom: 45%;
+        left: 25%;
+    }
+    #dels_area .deals .deals_content{
+
+    }
+    #dels_area .deals .deals_content .deals_icon{
+        gap: 1rem;
+    }
+    #dels_area .deals .deals_content .deals_icon h4 img{
+        width: 24px;
+    }
+    #dels_area .deals .deals_content .deals_icon h4{
+        font-size: 12px;
+        gap: 5px;
+    }
+    #simple_area .simple_text h1{
+        font-size: 2rem;
+    }
+    #newsletter_area .newsletter_img .discount{
+        bottom: 75px;
+    }
+    #newsletter_area .newsletter_img .discount p{
+        font-size: 1.1rem;
+    }
+    #newsletter_area .newsletter_img .discount span{
+        font-size: 2.1rem;
+    }
+    #newsletter_area .newsletter_form{
+        width: 40%;
+        border-radius: 15px;
+        border: 1px solid #FF5400;
+        padding: 10px 1rem;
+    }
+    #newsletter_area .newsletter_form p{
+        margin-bottom: 1rem;
+    }
+    #newsletter_area .newsletter_form hr{
+        margin: 1rem 0;
+    }
+}
 
 
 

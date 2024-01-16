@@ -93,7 +93,6 @@ header nav ul li a{
     border-radius: 16px;
     background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
     text-align: center;
-    filter: brightness(-100);
     color: #fff;
 }
 
@@ -127,6 +126,7 @@ header nav ul li a{
 #banner_area .banner_content .banner_form button{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 8px;
 }
 
@@ -298,7 +298,7 @@ main{
 /* Choose Area Strats Here */
 #Choose_area{
     width: 100%;
-    margin: 4rem;
+    margin: 4rem auto;
 }
 #Choose_area .choose_text{
     text-align: center;
@@ -362,6 +362,11 @@ main{
 
 #dels_area .deals_text{
     text-align: center;
+}
+
+#dels_area .deals_text h1{
+    font-size: var(--section-heading);
+    font-weight: var(--font-weight);
 }
 
 #dels_area .deals{
@@ -458,11 +463,11 @@ main{
     margin-top: 3rem;
     width: 100%;
     display: flex;
+    gap: 1rem;
 }
 
 #simple_area .simple_text{
     width: 50%;
-    padding: 2rem 0;
 }
 
 #simple_area .simple_text h1{
@@ -481,14 +486,48 @@ main{
 #simple_area .simple_text ul li{
     list-style-type: disc;
     font-weight: var(--font-weight);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     margin-left: 1rem;
 }
 
+#simple_area .simple_text button{
+    width: 40%;
+}
 #simple_area video{
     width: 50%;
     border-radius: 10px;
 }
+/* Extra Area Starts Here */
+
+
+#extra_area{
+    width: 100%;
+    margin: 3rem auto;
+    margin-top: 5rem;
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#extra_area .extra_text{
+    width: 50%;
+}
+
+#extra_area .extra_text h1{
+    color: #0A0826;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+#extra_area .extra_text p{
+    color: #6C6C6C;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
 /* NewsLetter Area Starts Here */
 #newsletter_area{
     margin: 5rem 0;
